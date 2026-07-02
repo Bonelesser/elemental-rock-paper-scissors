@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Battle</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .buttons {
+            margin: 20px 0;
+        }
+
+        .element-button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .choices {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            margin: 30px 0;
+        }
+
+        .choice {
+            text-align: center;
+        }
+
+        .choice i {
+            font-size: 80px;
+            opacity: 0.3;
+        }
+
+        .active {
+            opacity: 1 !important;
+        }
+
+        .scores {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 20px;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Element Battle</h1>
+
+    <div class="buttons">
+        <button class="element-button" value="fire">Fire</button>
+        <button class="element-button" value="leaf">Leaf</button>
+        <button class="element-button" value="water">Water</button>
+    </div>
+
+    <div class="choices">
+        <div class="choice">
+            <h2>Player</h2>
+            <i id="player-element" class="fas fa-question"></i>
+        </div>
+
+        <div class="choice">
+            <h2>Computer</h2>
+            <i id="computer-element" class="fas fa-question"></i>
+        </div>
+    </div>
+
+    <div id="result">Choose an element to begin.</div>
+
+    <div class="scores">
+        <div id="result-playerscore">
+            <b>Player:</b><br>0
+        </div>
+
+        <div id="result-computerscore">
+            <b>Computer:</b><br>0
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
